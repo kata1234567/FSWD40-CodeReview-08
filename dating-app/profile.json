@@ -1,0 +1,91 @@
+[{
+    "name": "Brian",
+    "surname": "Doe",
+    "gender": "male",
+    "age": 32,
+    "isRelated": true,
+    "image": "../assets/img_profile/brian.png",
+    "likes": 0
+  },
+  {
+    "name": "Claire",
+    "surname": "Twain",
+    "gender": "female",
+    "age": 25,
+    "civilStatus": false,
+    "image": "../assets/img_profile/claire.png",
+    "likes": 0
+  },
+  {
+    "name": "Harald",
+    "surname": "Twist",
+    "gender": "male",
+    "age": 73,
+    "civilStatus": false,
+    "image": "../assets/img_profile/harald.png",
+    "likes": 0
+  },
+  {
+    "name": "Jacob",
+    "surname": "Zweig",
+    "gender": "male",
+    "age": 35,
+    "civilStatus": true,
+    "image": "../assets/img_profile/jacob.png",
+    "likes": 0
+  },
+  {
+    "name": "John",
+    "surname": "Brecht",
+    "gender": "male",
+    "age": 26,
+    "civilStatus": false,
+    "image": "../assets/img_profile/john.png",
+    "likes": 0
+  },
+  {
+    "name": "Marie",
+    "surname": "Maier",
+    "gender": "female",
+    "age": 35,
+    "civilStatus": false,
+    "image": "../assets/img_profile/marie.png",
+    "likes": 0
+  },
+  {
+    "name": "Pete",
+    "surname": "Schmit",
+    "gender": "male",
+    "age": 28,
+    "civilStatus": true,
+    "image": "../assets/img_profile/pete.png",
+    "likes": 0
+  },
+  {
+    "name": "Robert",
+    "surname": "Berger",
+    "gender": "male",
+    "age": 39,
+    "civilStatus": true,
+    "image": "../assets/img_profile/robert.png",
+    "likes": 0
+  },
+  {
+    "name": "Roxy",
+    "surname": "Williams",
+    "gender": "female",
+    "age": 36,
+    "civilStatus": false,
+    "image": "../assets/img_profile/roxy.png",
+    "likes": 0
+  },
+  {
+    "name": "Viktoria",
+    "surname": "Johnson",
+    "gender": "female",
+    "age": 24,
+    "civilStatus": false,
+    "image": "../assets/img_profile/viktoria.png",
+    "likes": 0
+  }
+]

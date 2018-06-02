@@ -1,0 +1,54 @@
+<navbar>
+  
+</navbar>
+<hero></hero>
+<div class="container-fluid">
+	<router-outlet></router-outlet>
+</div>
+
+
+<!-- filter field  by Gender  -->
+<div class="container-fluid">
+  <div *ngIf="appState == 'default'" class="row" >
+      <div class="col-lg-12">
+        <label id="filterGenderLabel" >Filter Gender
+          <select (change)="filterGender(filteredGender.value)" #filteredGender>
+            <option value="0">All</option>
+            <option *ngFor="let genderType of genderType" value="{{genderType.name}}">
+              {{genderType.name}}
+            </option>
+          </select>
+        </label>
+      </div>
+    </div>
+</div>
+
+<!-- print elements-->
+
+<div class="container-fluid">
+<div class="row">
+  <div  *ngFor="let profiles of profiles" class="col-lg-3 col-md-6 col-sm-12 text-center mt-5" >
+    <div class="row">
+        <div class="col-12 text-center">
+          <img class="img-fluid imgProfile mb-4" src="{{profiles.image}}" alt="{{profiles.name}}-Image">
+        </div>
+        <div class="col-12 text-center">
+            <h4>{{profiles.name}}  {{profiles.surname}}</h4>
+        </div>
+        <div class="col-12 details border-top border-bottom likeValue" >
+           <p *ngIf="profiles.isRelated; else single">Related</p>
+            <ng-template #single><p>Single</p></ng-template>
+        
+            <p *ngIf="profiles.gender =='male'; else female"><i class="fas fa-mars genderSymbol genderSymbolMale"></i></p>
+          
+            <ng-template #female><p><i class="fas fa-venus genderSymbol genderSymbolFemale"></i></p></ng-template>
+        
+            <div class="mb-4">
+                <div class="btnLike likeValue likeBtn"  (click)="addLike(profiles.$key ,profiles.likes)" #li><i class="far fa-thumbs-up"></i></div> 
+                <span class="ml-4 mr-4 font-weight-bold likeValue">{{profiles.likes}}</span>             
+            </div>           
+      </div>
+    </div>
+  </div>
+</div>
+</div>
