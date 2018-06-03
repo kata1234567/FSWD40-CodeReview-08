@@ -5,3 +5,10 @@
 			height: 500px;
 			opacity: 1;
 }
+
+.imgProfile{
+    height: 200px;
+}
+.likeValue{
+    font-size: 25px;
+}
